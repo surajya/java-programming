@@ -1,4 +1,4 @@
-package com.multithread;
+package com.multithread01;
 
 public class Section02 {
 
