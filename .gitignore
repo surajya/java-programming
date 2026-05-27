@@ -1,0 +1,13 @@
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Build directories
+target/
+build/
+out/
+bin/
