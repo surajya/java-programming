@@ -55,7 +55,6 @@ class PenPaperThread2 implements Runnable {
 		synchronized (pen) {
 			paper.writeWithPenAndPaper(pen);
 		}
-		//paper.writeWithPenAndPaper(pen);
 	}
 }
 
@@ -68,7 +67,6 @@ public class PenPaperDeadLock {
 		Thread thread2 = new Thread(new PenPaperThread2(pen, paper), "Thread-2");
 
 		thread1.start();
-		//thread1.join(); // Wait for thread1 to finish before starting thread2 to increase the chances of deadlock
 		thread2.start();
 	}
 }
